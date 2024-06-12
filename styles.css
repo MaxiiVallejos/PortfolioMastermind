@@ -7,22 +7,80 @@
 body{
     background-color: #222;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    /* font-size: 50px; */
+    font: 200 14px 'Poppins', 'sans-serif';  /*primero el weight(grosor) luego tam*/
+
+}
+
+p{
+    text-align:justify ;
 }
 h2{
-    font-size: 30px;
-    text-align:start;
+    font-size: 36px;
+    line-height: 36px;
 }
 h3{
     color: #999;
+    font-size: 18px;
+}
+
+i{
+    font-size: 24px;
+    color: white;
+}
+
+i:hover{
+    color: #ffc900;
+}
+
+a:any-link{
+color:white;
+}
+a: :-moz-any-link{
+    color:white;
+}
+a:-webkit-any-link{
+    color:white;
+}
+li{
+    float: left;
+}
+
+/* ids y clases */
+
+#inicio{
+    background-image: url(images/altumcode-dMUt0X3f59Q-unsplash.jpg);
+    min-height: 280px; /*La imagen tiene 300px de height pero el contenido agrega un
+    padding arriba y abajo de 10px por el class seccion. para que la caja de la 
+    etiqueta inicio mida 300px se coloca como tamaño 280px y ahora la imagen 
+    medira su tamaño original.
+     */
+     background-size: cover; /*Esto ajusta la imagen al tamaño de la caja*/
+     background-repeat: no-repeat;
+
+}
+
+#redessociales{
+    list-style: none; /*para quitar el puntito al crear una lista con el tag li*/
+    margin-top: 20px;
+   
 }
 
 .hashtag{
     color: #ffc900;
 }
 
+#proyectos{
+    border-top: 2px solid  #ffc900;
+}
+
 #tecnologias{
     background-color: white;
     color: #222;
+}
+.seccion{
+    padding: 10px 100px 10px 100px; /*este padding es para que todos los elementos no esten pegados a la izquierda*/
+    /* Esto es lo mismo que hacer
+       padding-top, padding-left, padding-bottom, padding-right
+       (arriba)     (derecha)     (abajo)         (izquierda)
+    */
 }
